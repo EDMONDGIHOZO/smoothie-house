@@ -28,11 +28,11 @@ function SmoothieHouse () {
 
 
     return (
-        <div className="bg-gray-100 h-screen p-5">
+        <div className="bg-gray-100 h-full min-h-screen p-5">
             {fetchError && (<p>{fetchError}</p>)}
             {smoothies && (
                 <div>
-                    <div className="grid grid-cols-4 gap-3 items-center">
+                    <div className="grid md:grid-cols-4 grid-cols-1 gap-3 items-center">
                         {smoothies.map((sm) =>  (
                             <SmoothieCard key={sm.id} title={sm.title} method={sm.method} rating={sm.rating}/>
                         ))}

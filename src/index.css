@@ -35,3 +35,24 @@ nav .menu {
   padding: 20px;
   text-decoration: underline;
 }
+
+.page {
+  background: #f1f0f0;
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form {
+  @apply flex flex-col space-y-4 w-4/12
+}
+input {
+  @apply p-2 rounded-md;
+}
+button {
+  background: #67fd67;
+  @apply p-3 rounded text-green-600 border-green-500 border-2;
+}

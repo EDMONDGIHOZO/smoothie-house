@@ -1,6 +1,7 @@
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import './App.css';
 import SmoothieHouse from "./pages";
+import CreateSmoothie from "./pages/create";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       </nav>
         <Routes>
             <Route path="/" element={<SmoothieHouse />} />
+            <Route path="/create" element={<CreateSmoothie />} />
         </Routes>
     </BrowserRouter>
   );
